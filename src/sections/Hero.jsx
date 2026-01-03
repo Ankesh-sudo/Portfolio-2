@@ -8,7 +8,7 @@ const Hero = () => {
     { Icon: Github, href: "https://github.com/Ankesh-sudo", label: "GitHub" },
     { Icon: Linkedin, href: "https://www.linkedin.com/in/ankesh-thakur-944909286/", label: "LinkedIn" },
     { Icon: Twitter, href: "https://x.com/AnkeshT79410706", label: "Twitter" },
-    { Icon: Instagram, href: "https://www.instagram.com/ankesh_thakur1", label: "Instagram" },
+    { Icon: Instagram, href: "https://www.instagram.com/ankesh_thakur1/", label: "Instagram" },
   ];
 
   return (

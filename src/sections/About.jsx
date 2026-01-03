@@ -22,8 +22,14 @@ const About = () => {
   ];
 
   return (
-    <section id="about" className="section-padding">
-      <div className="container mx-auto">
+    <section id="about" className="relative py-20">
+      {/* Background matching home page */}
+      <div className="absolute inset-0 bg-gradient-to-br from-black/90 via-black/80 to-black/90 -z-10" />
+      
+      {/* Optional: Add some particles or texture */}
+      <div className="absolute inset-0 opacity-5 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAiIGhlaWdodD0iNjAiIHZpZXdCb3g9IjAgMCA2MCA2MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPjxnIGZpbGw9IiNmZmYiIGZpbGwtb3BhY2l0eT0iMC4wNCI+PHBhdGggZD0iTTM2IDM0aDR2NGgtNHptLTQtNEgyOHY0aDR6Ii8+PC9nPjwvZz48L3N2Zz4=')] -z-5" />
+      
+      <div className="container mx-auto px-6 relative z-10">
         <motion.div
           variants={staggerContainer}
           initial="hidden"
@@ -86,8 +92,8 @@ const About = () => {
             </motion.div>
           </div>
 
-          {/* Features Grid */}
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+          {/* Features Grid - Using only 3 features as defined */}
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {features.map((feature, index) => (
               <motion.div
                 key={feature.title}
