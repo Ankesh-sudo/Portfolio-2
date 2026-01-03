@@ -1,0 +1,38 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-gray-950 text-gray-100;
+  }
+}
+
+@layer components {
+  .glass-effect {
+    @apply backdrop-blur-xs bg-white/5 border border-white/10;
+  }
+
+  .gradient-text {
+    @apply bg-gradient-to-r from-teal-400 to-cyan-400 bg-clip-text text-transparent;
+  }
+
+  .btn-primary {
+    @apply px-6 py-3 bg-gradient-to-r from-teal-500 to-cyan-500
+    text-white font-semibold rounded-lg shadow-lg
+    hover:shadow-teal-500/30 transition-all hover:-translate-y-1;
+  }
+
+  .btn-outline {
+    @apply px-6 py-3 border-2 border-teal-400 text-teal-400
+    rounded-lg hover:bg-teal-400/10 transition-all hover:-translate-y-1;
+  }
+
+  .section-padding {
+    @apply px-4 sm:px-6 lg:px-8 py-16 md:py-24;
+  }
+}
